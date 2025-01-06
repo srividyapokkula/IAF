@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAF</title>
+    <link rel="icon" href="icon .jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </script>
+    <style>
+         .navbar {
+            background-color: #003d66;
+            /* Indian Air Force Blue */
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar-brand {
+            color: #ffffff !important;
+            margin-right: 300px;
+        }
+
+        .navbar-brand:hover {
+            color: #c0c0c0 !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            margin-right: 60px;
+
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #c0c0c0;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23ffffff" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
+        }
+       
+        .video-container {
+            position: relative;
+            max-width: 100%;
+            /* Maintain aspect ratio */
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            background: #000;
+        }
+        
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text {
+            position: absolute;
+            top: 65%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+            color: rgb(6, 11, 121);
+            font-size: 98px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            /* Optional styles */
+            padding: 10px;
+            /* background: rgba(0, 0, 0, 0.5); */
+            border-radius: 5px;
+         
+          
+        }
+        
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 700px; /* Adjust height as needed */
+            margin-bottom: 20px; /* Space between images */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            transition: transform 0.3s ease; /* Optional: Smooth scale transition */
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease; /* Optional: Smooth opacity transition */
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            color: white;
+            font-size: 4rem; /* Adjust font size as needed */
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+            /* Optional styles for better visibility */
+            padding: 10px;
+            /* background: rgba(0, 0, 0, 0.5); */
+            border-radius: 5px;
+            opacity: 0; /* Initially hidden */
+            font-family: "Edu VIC WA NT Beginner", cursive;
+        }
+
+        .image-container:hover .text-overlay {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1; /* Show the text */
+        }
+        .footer {
+            background-color: #003d66;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer .social-icons a {
+            color: #ffffff;
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+
+        .footer .social-icons a:hover {
+            color: #c0c0c0;
+        }
+
+        .footer .address {
+            font-size: 0.9rem;
+        }
+
+
+        .footer .footer-logo {
+            max-width: 150px;
+        }
+        @media only screen and (min-width:320px) and (max-width:480px){
+            
+        .video-container {
+            position: relative;
+            max-width: 100%;
+            /* Maintain aspect ratio */
+            padding-bottom: 99.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            background: #000;
+        }
+        
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text {
+            position: absolute;
+            top: 85%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            color: rgb(6, 11, 121);
+            font-size: 38px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            /* Optional styles */
+            padding: 10px;
+            /* background: rgba(0, 0, 0, 0.5); */
+            border-radius: 5px;
+         
+          
+        }
+        }
+        </style>
+      
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Indian Air Force</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tribute.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login1.html">LogOut</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+     <!-- Bootstrap JS and dependencies -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+ 
+
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="video_preview_h264.mp4" type="video/mp4">
+            <!-- Add other formats if needed -->
+            <!-- Your browser does not support the video tag. -->
+        </video>
+        <div class="text">INDIAN AIRFORCE</div>
+    </div>
+   
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Image 1 -->
+            <div class="col-md-4">
+                <div class="image-container">
+                    <img src="journey.jpeg" alt="Image 1">
+                    <div class="text-overlay">Our Journey</div>
+                </div>
+            </div>
+            <!-- Image 2 -->
+            <div class="col-md-4">
+                <div class="image-container">
+                    <img src="air warrior.jpeg" alt="Image 2">
+                    <div class="text-overlay">Being An Air Warrior</div>
+                </div>
+            </div>
+            <!-- Image 3 -->
+            <div class="col-md-4">
+                <div class="image-container">
+                    <img src="organization.jpeg" alt="Image 3">
+                    <div class="text-overlay">Our Organisation</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="icon .jpeg" alt="Indian Air Force Logo" class="footer-logo mb-3">
+                    <p class="address">Indian Air Force<br>
+                        Vayu Bhawan, Rafi Ahmed Kidwai Marg,<br>
+                        New Delhi - 110 001, India</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="tribute.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="www.facebook.com/indianairforce" class="fab fa-facebook-f" target="_blank"></a>
+                        <a href="https://twitter.com/IAF_MCC" class="fab fa-twitter" target="_blank"></a>
+                        <a href="https://www.instagram.com/indianairforce" class="fab fa-instagram" target="_blank"></a>
+                        <a href="https://www.linkedin.com/company/indian-air-force" class="fab fa-linkedin-in"
+                            target="_blank"></a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        All Rights are Reserved by <br> Ashwini & Srividya
+
+                    </div>
+                </div>
+
+            </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome for social icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+
+
+
+</body>
+</html>

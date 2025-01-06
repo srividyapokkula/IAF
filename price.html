@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAF</title>
+    <link rel="icon" href="icon .jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+   </script>
+    
+    <style>
+ .navbar {
+            background-color: #003d66;
+            /* Indian Air Force Blue */
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar-brand {
+            color: #ffffff !important;
+            margin-right: 300px;
+        }
+
+        .navbar-brand:hover {
+            color: #c0c0c0 !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            margin-right: 60px;
+
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #c0c0c0;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23ffffff" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
+        }
+
+        .fee {
+            height: 50vh;
+            width: 100%;
+        }
+
+        #fee {
+            height: 50vh;
+            width: 80%;
+            margin-top: 60px;
+            margin-left: 140px;
+        }
+
+        .topic {
+            font-size: 70px;
+            color: yellow;
+            position: absolute;
+            left: 460px;
+            top: 150px;
+            font-weight: bold;
+            font-family: "Dancing Script", cursive;
+        }
+
+        .info {
+            font-size: 35px;
+            margin-top: 80px;
+            margin-left: 150px;
+            color: blue;
+
+        }
+
+        .table1 {
+            width: 70%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-left: 150px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr td a {
+            text-decoration: none;
+        }
+
+        .cen1 {
+            font-size: 48px;
+            color: rgb(238, 8, 85);
+            margin-top: -400px;
+            margin-left: 150px;
+        }
+
+        .p1 {
+            font-size: 18px;
+            margin-top: -20px;
+            margin-left: 150px;
+        }
+
+        .d1 {
+            margin-left: 150px;
+            font-size: 30px;
+            color: navy;
+        }
+
+        .table2 {
+            width: 70%;
+            border-collapse: collapse;
+            margin-top: 40px;
+            margin-left: 10px;
+        }
+
+        .box11 {
+            margin-top: 440px;
+        }
+
+        .center1,
+        .center2,
+        .center3,
+        .center4,
+        .center5,
+        .center6,
+        .center7,
+        .center8 {
+            height: 100vh;
+            width: 80%;
+            margin-top: -140px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #003d66;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer .social-icons a {
+            color: #ffffff;
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+
+        .footer .social-icons a:hover {
+            color: #c0c0c0;
+        }
+
+        .footer .address {
+            font-size: 0.9rem;
+        }
+
+
+        .footer .footer-logo {
+            max-width: 150px;
+        }
+        @media only screen and (min-width:320px) and (max-width:480px){
+            body{
+                overflow-x: hidden;
+            }
+
+        .fee {
+            height: 50vh;
+            width: 100%;
+        }
+
+        #fee {
+            height: 200px;
+            width: 90%;
+            margin-top: 100px;
+            margin-left: 10px;
+        }
+
+        .topic {
+            font-size: 30px;
+            color: yellow;
+            position: absolute;
+            left: 30px;
+            top: 180px;
+            font-weight: bold;
+            font-family: "Dancing Script", cursive;
+        }
+
+        .info {
+            font-size: 35px;
+            margin-top: 10px;
+            margin-left: 10px;
+            color: blue;
+
+        }
+
+        .table1 {
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr td a {
+            text-decoration: none;
+        }
+
+        .cen1 {
+            font-size: 30px;
+            color: rgb(238, 8, 85);
+            margin-top: -400px;
+            margin-left: 10px;
+        }
+
+        .p1 {
+            font-size: 16px;
+            margin-top: 40px;
+            margin-left: 50px;
+        }
+
+        .d1 {
+            margin-left: 10px;
+            font-size: 30px;
+            color: navy;
+        }
+
+        .table2 {
+            width: 98.8%;
+            border-collapse: collapse;
+            margin-top: 80px;
+            margin-left: -30px;
+        }
+
+        .box11 {
+            margin-top: 440px;
+        }
+
+        .center1,
+        .center2,
+        .center3,
+        .center4,
+        .center5,
+        .center6,
+        .center7,
+        .center8 {
+            height: 100vh;
+            width: 80%;
+            margin-top: -140px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+    }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Indian Air Force</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tribute.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login1.html">LogOut</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <div class="fee">
+        <img src="fee.jpg" alt="" id="fee">
+        <p class="topic">Cources And fees</p>
+    </div>
+    <div class="info">The Best Air Force Training Institues In India </div>
+    <table class="table1">
+        <thead>
+            <tr>
+
+                <th>Acadamy</th>
+                <th>Fees</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <a href="cources.html">Defence Forces Acadamy</a>
+
+                </td>
+
+                <td>25000</td>
+            </tr>
+            <tr>
+                <td> <a href="cources.html">Force Defence Acadamy</a></td>
+                <td>38000</td>
+            </tr>
+            <tr>
+                <td><a href="price.html">Roy Education</a></td>
+                <td>22000</td>
+            </tr>
+            <tr>
+                <td><a href="cources.html">Air Force Technical College</a></td>
+                <td>60000</td>
+            </tr>
+            <tr>
+                <td><a href="price.html">ASTA Education</a></td>
+                <td>40000</td>
+            </tr>
+            <tr>
+                <td><a href="cources.html">Offece Career Acadamy</a> </td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td><a href="price.html">Tara Institute</a></td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td><a href="cources.html">Warriors Defence Acadamy</a></td>
+                <td>10000</td>
+            </tr>
+
+        </tbody>
+        <!-- <img src="a5.jpeg" alt="" id="tb"> -->
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="col-lg-12" >
+            <div class="box11">
+                <p class="cen1">Defence Forces Academy</p>
+                <p class="p1">Defence Forces Academy is a coaching institute for NDA, CDS, AFCAT, CAPF, etc. Defence
+                    Forces
+                    Academy
+                    based in Uttar Pradesh. Coaching is provided <br> by faculty with years of experience and extensive
+                    knowledge; the experts guide the students and led their way to a brighter future. This helps the
+                    students to <br> gain confidence and face a competitive environment. Exceptional mentoring
+                    standardized
+                    teaching, updated course material, unique sectional test approach, <br> and mock tests are provided
+                    to
+                    the
+                    students to help them bring out the best of their capability.</p>
+                <p class="d1">Institute Details</p>
+            </div>
+            <table class="table2">
+                <thead>
+                    <tr>
+                        <th>Institute Type</th>
+                        <th>Coatching</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Admission Mode</td>
+                        <td>Online/Offline</td>
+                    </tr>
+                    <tr>
+                        <td>Email ID</td>
+                        <td>support@defenceforcesacademy.com</td>
+                    </tr>
+                    <tr>
+                        <td>Fees</td>
+                        <td>Rs 25,000</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>C-53, Third Floor, RDC RAJ NAGAR opp ICICI Bank, Ghaziabad - 201002</td>
+                    </tr>
+                    <tr>
+                        <td>Contact</td>
+                        <td>8860067230</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="box11">
+                <p class="cen1">Force Defence Academy</p>
+                <p class="p1">Force Defence Academy (FDA) is India's No.1 Defence Career Training Academy. FDA is
+                    recognized as the best Defence Coaching Institute because of the consistent success. Force Defence
+                    Academy provides physical, written and interview training for NDA, CDS, AFCAT, Army, Navy and Air
+                    Force Exams. Force Defence Academy is handled by experienced professors who are experts in their
+                    Subjects.</p>
+                <p class="d1">Institute Details</p>
+            </div>
+            <table class="table2">
+                <thead>
+                    <tr>
+                        <th>Institute Type</th>
+                        <th>Coatching</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Admission Mode</td>
+                        <td>Online/Offline</td>
+                    </tr>
+                    <tr>
+                        <td>Email ID</td>
+                        <td>info@forceacademyindore.com</td>
+                    </tr>
+                    <tr>
+                        <td>Fees</td>
+                        <td>Rs 38,000</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>Chitawad Road, In Front of Petrol Pump, Above Central Bank Sajan Nagar, Navlakha, Indore,
+                            Madhya Pradesh 452001, India</td>
+                    </tr>
+                    <tr>
+                        <td>Contact</td>
+                        <td>9826049151, 9691837948</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="box11">
+                <p class="cen1">Roy Education</p>
+                <p class="p1">Roy Education is a leading coaching institute that provides excellent coaching for various
+                    competitive examinations such as CLAT, CAT, MAT and other government exams, etc. They have an
+                    experienced faculty team that adopts the right approach for teaching, are consistently improving
+                    their teaching quality, and are adopting innovative and effective teaching methods.</p>
+                <p class="d1">Institute Details</p>
+            </div>
+            <table class="table2">
+                <thead>
+                    <tr>
+                        <th>Institute Type</th>
+                        <th>Coatching</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Admission Mode</td>
+                        <td>Online/Offline</td>
+                    </tr>
+                    <tr>
+                        <td>Email ID</td>
+                        <td>info@royeducation.com</td>
+                    </tr>
+                    <tr>
+                        <td>Fees</td>
+                        <td>Rs 22,000</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>6 Rampuri Near Ahuja Garments Main Road Govindpuri, Kalkaji New Delhi 110019</td>
+                    </tr>
+                    <tr>
+                        <td>Contact</td>
+                        <td>98995 24896, 9540405924</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="box11">
+                <p class="cen1">Air Force Technical College</p>
+                <p class="p1">Air Force Technical College (AFTC) was established on 04 Jul 49 with Gp Capt J Beaumont,
+                    DFC as the first Commandant. The College, then named as Technical Training College was established
+                    at Bangalore with the assistance of Air Service Training Ltd, Hamble (UK). For a few years in the
+                    beginning, the Commandant and other Directing Staff were from the Royal Air Force (RAF). The college
+                    was completely taken over by the Indian Air Force and the name of the institute was changed to Air
+                    Force Technical College on 06 Jul 56 with Group Captain NJ Kriplani MBE assuming charge as first
+                    Indian Commandant of the college.</p>
+                <p class="d1">Institute Details</p>
+            </div>
+            <table class="table2">
+                <thead>
+                    <tr>
+                        <th>Institute Type</th>
+                        <th>Coatching</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Admission Mode</td>
+                        <td>Online/Offline</td>
+                    </tr>
+                    <tr>
+                        <td>Email ID</td>
+                        <td>career.iaf@nic.in</td>
+                    </tr>
+                    <tr>
+                        <td>Fees</td>
+                        <td>Rs 60,000</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>Room No 590 Cabin 8 'C', Air Headquarters (Vayu Bhawan), Rafi Marg, New Delhi - 110106</td>
+                    </tr>
+                    <tr>
+                        <td>Contact</td>
+                        <td>011 - 23010231</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-12">
+            <div class="box11">
+                <p class="cen1">Force Defence Academy</p>
+                <p class="p1">Defence Forces Academy is a coaching institute for NDA, CDS, AFCAT, CAPF, etc. Defence
+                    Forces
+                    Academy
+                    based in Uttar Pradesh. Coaching is provided <br> by faculty with years of experience and extensive
+                    knowledge; the experts guide the students and led their way to a brighter future. This helps the
+                    students to <br> gain confidence and face a competitive environment. Exceptional mentoring
+                    standardized
+                    teaching, updated course material, unique sectional test approach, <br> and mock tests are provided
+                    to
+                    the
+                    students to help them bring out the best of their capability.</p>
+                <p class="d1">Institute Details</p>
+            </div>
+            <table class="table2">
+                <thead>
+                    <tr>
+                        <th>Institute Type</th>
+                        <th>Coatching</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Admission Mode</td>
+                        <td>Online/Offline</td>
+                    </tr>
+                    <tr>
+                        <td>Email ID</td>
+                        <td>support@defenceforcesacademy.com</td>
+                    </tr>
+                    <tr>
+                        <td>Fees</td>
+                        <td>Rs 25,000</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>C-53, Third Floor, RDC RAJ NAGAR opp ICICI Bank, Ghaziabad - 201002</td>
+                    </tr>
+                    <tr>
+                        <td>Contact</td>
+                        <td>011 - 23010231</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="box11">
+                <p class="cen1">Asta Education</p>
+                <p class="p1">ASTA Educational And Publication House Pvt. Ltd., earlier known as ASTA Institute, is one
+                    of the few premier institutes for Air Force X group, Air Force Y Group, Navy SSR, AA, MR/NMR, NDA
+                    and Coast Guard exams. We have a proven track record of almost 100% results in the Air Force
+                    services exams. ASTA Educational And Publication House Pvt. Ltd. has been constantly putting
+                    comprehensive effort for more than a decade and has a spectrum of successful candidates throughout
+                    its operating schedule. Our unique concept of enabling the students to receive unparalleled
+                    quality-education and guidelines, with an emphasis on improving their conceptual aptitude, provides
+                    us and edge over other organizations.</p>
+                <p class="d1">Institute Details</p>
+            </div>
+            <table class="table2">
+                <thead>
+                    <tr>
+                        <th>Institute Type</th>
+                        <th>Coatching</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Admission Mode</td>
+                        <td>Online/Offline</td>
+                    </tr>
+                    <tr>
+                        <td>Email ID</td>
+                        <td>info@astaedudcation.com</td>
+                    </tr>
+                    <tr>
+                        <td>Fees</td>
+                        <td>Rs 40,000</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>308 and 309, 3rd floor, A 212/C, Tirupati plaza near Shakarpur, Delhi, India 110092</td>
+                    </tr>
+                    <tr>
+                        <td>Contact</td>
+                        <td>9773678302</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="box11">
+                <p class="cen1">Officers Career Academy</p>
+                <p class="p1">Academy is headed by Prof Amit Kumar Dubey (Air Force Veteran). He is having a vast
+                    experience of over 21 years in defense recruitment process. Academy functions under Maji Sainik
+                    Foundation established in 1998 by Prof. Ranganath Ghanwat (Ex -Air Force). The Motto of the Academy
+                    is to guide, council & train the young generation to choose right career path at right time to
+                    enlighten their future. Many opportunities are available after 10th /12th/ graduate. /post graduate.
+                    To explore these opportunities for individuals Academy’s experienced staff work hard with cadets to
+                    fulfill their dreams at right time in right direction. </p>
+                <p class="d1">Institute Details</p>
+            </div>
+            <table class="table2">
+                <thead>
+                    <tr>
+                        <th>Institute Type</th>
+                        <th>Coatching</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Admission Mode</td>
+                        <td>Online/Offline</td>
+                    </tr>
+                    <tr>
+                        <td>Email ID</td>
+                        <td>officercareeracademy@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Fees</td>
+                        <td>Rs 10,000</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>OCA Complex, Sainik Nagar, Wagholi – Rahu Rd, near Aaimata Temple, Kesnand, Maharashtra
+                            412207</td>
+                    </tr>
+                    <tr>
+                        <td>Contact</td>
+                        <td>8446650474</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-12">
+            <div class="box11">
+                <p class="cen1">Tara Institute</p>
+                <p class="p1">Tara Institute is a Premier Training Centre, is an initiative of young Bankers, Railway,
+                    MBAs and eminent educationists who have a rich experience of competitive entrance exam preparation.
+                    We offer coaching for Bank PO, IBPS PO, SBI PO, Bank Clerk, SSC CGL, NDA, BBA, CTET in Delhi, Mumbai
+                    & Other Cities of India. Our Aim is to make entrance examinations a cakewalk. We believe that right
+                    direction and exact information will help a candidate in breaking every success record. Following
+                    the belief, we have nurtured best IBPS Bank PO coaching classes to offer high quality education to
+                    the aspirants in today's highly competitive environment.</p>
+                <p class="d1">Institute Details</p>
+            </div>
+            <table class="table2">
+                <thead>
+                    <tr>
+                        <th>Institute Type</th>
+                        <th>Coatching</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Admission Mode</td>
+                        <td>Online/Offline</td>
+                    </tr>
+                    <tr>
+                        <td>Email ID</td>
+                        <td>Taraacademy@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Fees</td>
+                        <td>Rs 10,000</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>F-34, First Floor, Near PNB, Devli More, Khanpur, New Delhi-110062</td>
+                    </tr>
+                    <tr>
+                        <td>Contact</td>
+                        <td>+91-9311668899</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="icon .jpeg" alt="Indian Air Force Logo" class="footer-logo mb-3">
+                    <p class="address">Indian Air Force<br>
+                        Vayu Bhawan, Rafi Ahmed Kidwai Marg,<br>
+                        New Delhi - 110 001, India</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="tribute.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="www.facebook.com/indianairforce" class="fab fa-facebook-f" target="_blank"></a>
+                        <a href="https://twitter.com/IAF_MCC" class="fab fa-twitter" target="_blank"></a>
+                        <a href="https://www.instagram.com/indianairforce" class="fab fa-instagram" target="_blank"></a>
+                        <a href="https://www.linkedin.com/company/indian-air-force" class="fab fa-linkedin-in"
+                            target="_blank"></a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        All Rights are Reserved by <br> Ashwini & Srividya
+
+                    </div>
+                </div>
+
+            </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome for social icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+
+</body>
+
+</html>

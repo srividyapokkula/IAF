@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAF</title>
+    <link rel="icon" href="icon .jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </script>
+</head>
+<style>
+    .navbar {
+        background-color: #003d66;
+        /* Indian Air Force Blue */
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        margin-top: -5px;
+    }
+
+    .navbar-brand {
+        color: #ffffff !important;
+        margin-right: 300px;
+    }
+
+    .navbar-brand:hover {
+        color: #c0c0c0 !important;
+    }
+
+    .navbar-nav .nav-link {
+        color: #ffffff;
+        margin-right: 60px;
+
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #c0c0c0;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23ffffff" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
+    }
+
+    .history {
+        font-family: "PT Serif", serif;
+        font-weight: bold;
+        font-size: 50px;
+        /* font-style: normal; */
+        margin-left: 500px;
+        position: relative;
+        top: 20px;
+        color: brown;
+    }
+
+    .hpara {
+        font-size: 20px;
+        font-style: italic;
+        margin-left: 10px;
+    }
+
+    .hpara1 {
+        font-size: 20px;
+        font-style: italic;
+        margin-left: 100px;
+
+    }
+
+    .fullbox {
+        display: grid;
+        grid-template-columns: 550px 550px;
+        margin: 10px;
+        gap: 40px;
+    }
+
+    .col1,
+    .col2,
+    .col3,
+    .col4 {
+        height: 500px;
+        width: 500px;
+        /* border: 1px solid black; */
+        margin-top: 30px;
+        margin-left: 50px;
+        border-radius: 2%;
+        cursor: pointer;
+
+    }
+
+    .col1:hover {
+        box-shadow: 2px 2px 5px 5px rgb(139, 138, 138);
+    }
+
+    .col2:hover {
+        box-shadow: 2px 2px 5px 5px rgb(139, 138, 138);
+    }
+
+    .col3:hover {
+        box-shadow: 2px 2px 5px 5px rgb(139, 138, 138);
+    }
+
+    .col4:hover {
+        box-shadow: 2px 2px 5px 5px rgb(139, 138, 138);
+    }
+
+    .minicol1,
+    .minicol2,
+    .minicol3,
+    .minicol4 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 13px;
+
+    }
+
+    .minipara,
+    .minipara2,
+    .minipara3,
+    .minipara4 {
+        /* font-size: 20px; */
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .footer {
+            background-color: #003d66;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer .social-icons a {
+            color: #ffffff;
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+
+        .footer .social-icons a:hover {
+            color: #c0c0c0;
+        }
+
+        .footer .address {
+            font-size: 0.9rem;
+        }
+
+
+        .footer .footer-logo {
+            max-width: 150px;
+        }
+
+    @media only screen and (min-width:320px) and (max-width:480px) {
+        .navbar {
+        background-color: #003d66;
+        /* Indian Air Force Blue */
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        margin-top: -5px;
+    }
+        .history {
+            font-family: "PT Serif", serif;
+            font-weight: bold;
+            font-size: 50px;
+            /* font-style: normal; */
+            margin-left: 50px;
+            position: relative;
+            top: 90px;
+            color: brown;
+        }
+
+        .hpara {
+            font-size: 16px;
+            font-style: italic;
+            margin-left: 10px;
+            position: relative;
+            top: 90px;
+        }
+
+        .hpara1 {
+            font-size: 16px;
+            font-style: italic;
+            margin-left: 50px;
+            position: relative;
+            top: 90px;
+        }
+
+        .fullbox {
+            display: grid;
+            grid-template-columns: 550px ;
+            margin: 10px;
+            gap: 40px;
+        }
+
+        .col1,
+        .col2,
+        .col3,
+        .col4 {
+            height: 750px;
+            width: 300px;
+            margin-top: 90px;
+            margin-left: 0px;
+            border-radius: 2%;
+            cursor: pointer;
+        }
+
+        .col1:hover {
+            box-shadow: 2px 2px 5px 5px rgb(139, 138, 138);
+        }
+
+        .col2:hover {
+            box-shadow: 2px 2px 5px 5px rgb(139, 138, 138);
+        }
+
+        .col3:hover {
+            box-shadow: 2px 2px 5px 5px rgb(139, 138, 138);
+        }
+
+        .col4:hover {
+            box-shadow: 2px 2px 5px 5px rgb(139, 138, 138);
+        }
+
+        .minicol1,
+        .minicol2,
+        .minicol3,
+        .minicol4 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 13px;
+
+        }
+
+        .minipara,
+        .minipara2,
+        .minipara3,
+        .minipara4 {
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Indian Air Force</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tribute.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login1.html">LogOut</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <p class="history">History</p>
+    <p class="hpara">The Indian Air Force took off as a tiny fleet with four Westland Wapiti army co-operative
+        by-planes, six RAF trained officers and 19 Hawai Sepoys. Today, it is the fourth largest Air Force in the world
+        with a highly technical and specialised fighting force that safeguards our skies against enemy invasions.</p>
+
+    <p class="hpara1">A glance at the annals of its history will help us understand the glorious years of our legendary
+        Air Force.</p>
+
+    <div class="fullbox">
+        <div class="col1 " style="background-color: rgb(223, 247, 247);">
+            <p class="minicol1">[8th October 1932- 1st April 1954] The Two Births</p>
+            <p class="minipara">The two dates, mentioned above, are landmarks in the history of the Indian Air<br>
+                Force. On 8 October 1932, the Indian Air Force came into being and on 1st April<br> 1954 Air Marshal
+                Subroto Mukherjee, one of the founding members of the Air<br> Force took over as the first Indian Chief
+                of Air Staff.
+
+                The interim witnessed the most bloodiest war in the history of mankind, for the second time-World War
+                II. The IAF lent its support to UK during the war. KK Majumdar, one of the legendary heroes of the
+                Indian Air Force was rated one of the twelve best pilots of the Allied Air Forces. The same decade also
+                saw the birth of an Independent India followed by the formation of the Indian Air Force, as we know it
+                today.</p>
+        </div>
+
+        <div class="col2  " style="background-color: rgb(241, 221, 224);">
+            <p class="minicol2">[1955-1971] A Period Of Turmoil</p>
+            <p class="minipara2">This was the time the Indian Air Force entered a new era with the<br> acquisition of
+                jet aircraft. The period also saw the two Indo-Pak wars,<br> both of which were marked by the
+                neutralisation of Pakistani Air <br>efforts by the Indian Air Force. The IAF also contributed to the<br>
+                UN Peace keeping mission in Congo as well as the Sino<br> India Conflict, with dedication and
+                commitment.
+
+            </p>
+        </div>
+
+        <div class="col3 " style="background-color: rgb(202, 240, 188);">
+            <p class="minicol3">[1972-1990] A Time Of Progress</p>
+            <p class="minipara3">Over the next two decades the Indian Air Force undertook<br> massive upgrading of its
+                aircraft and equipment. As part of<br> the process, the Indian Air Force introduced over twenty new
+                <br>aircraft types. Jaguars and several variations of the MiG <br>were among the aircraft introduced to
+                replace the Dakotas and<br> the Packets. The MiG is a revolutionary aircraft that was<br> introduced to
+                the Indian fleet in the eighties.
+
+                The same period also witnessed a number of world <br>records set by Indian Air Force personnel. Sqn Ldr
+                Makkar and <br>Flt Lt RTS Chinna set a world record by bombing from their<br> Mi-17 helicopter in Ladakh
+                at an altitude of 5050 meters. Sqn Ldr Sanjay Thapar, was the first Indian to para jump over the South
+                Pole.<br>Exploring new vistas, Sqn Ldr Rakesh Sharma was the first Indian cosmonaut to venture into
+                outer space as part of an Indo-Soviet space program.
+            </p>
+        </div>
+
+        <div class="col4 " style="background-color: rgb(218, 255, 243);">
+            <p class="minicol4">[1990 - Present] Piloting India Into The New Millennium</p>
+            <p class="minipara4">The last decade of the twentieth century saw a phenomenal<br> change in the structure
+                of the Indian Air Force with induction<br> of women into the Air Force for short service
+                commissions.<br> It was also a time when the Air Force undertook some of the most <br>perilous
+                operations ever undertaken.
+
+                In 1999, the Indian Air Force undertook <br>"Operation Safed Sagar", the most unique air operation
+                undertaken<br> by any air force in the world. An air attack was launched and won at an<br> unprecedented
+                height, under hostile climatic conditions against <br>an intruding enemy. The Indian Air Force also
+                participated in the<br> peacekeeping mission at Somalia as part of a humanitarian operation.</p>
+        </div>
+    </div>
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="icon .jpeg" alt="Indian Air Force Logo" class="footer-logo mb-3">
+                    <p class="address">Indian Air Force<br>
+                        Vayu Bhawan, Rafi Ahmed Kidwai Marg,<br>
+                        New Delhi - 110 001, India</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="tribute.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="www.facebook.com/indianairforce" class="fab fa-facebook-f" target="_blank"></a>
+                        <a href="https://twitter.com/IAF_MCC" class="fab fa-twitter" target="_blank"></a>
+                        <a href="https://www.instagram.com/indianairforce" class="fab fa-instagram" target="_blank"></a>
+                        <a href="https://www.linkedin.com/company/indian-air-force" class="fab fa-linkedin-in"
+                            target="_blank"></a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        All Rights are Reserved by <br> Ashwini & Srividya
+
+                    </div>
+                </div>
+
+            </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome for social icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+</body>
+
+
+</html>

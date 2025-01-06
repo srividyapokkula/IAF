@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAF</title>
+    <link rel="icon" href="icon .jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+   </script>
+    <style>
+        .navbar {
+            background-color: #003d66;
+            /* Indian Air Force Blue */
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar-brand {
+            color: #ffffff !important;
+            margin-right: 300px;
+        }
+
+        .navbar-brand:hover {
+            color: #c0c0c0 !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            margin-right: 60px;
+
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #c0c0c0;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23ffffff" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
+        }
+
+        .process {
+            font-size: 40px;
+            color: black;
+            font-weight: bold;
+            position: absolute;
+            top: 100px;
+            left: 580px;
+        }
+
+        .step1 {
+            height: 100px;
+            width: 80%;
+            background: linear-gradient(rgb(119, 119, 238), white);
+            position: absolute;
+            top: 200px;
+            left: 150px;
+            font-size: 30px;
+        }
+
+        .s1 {
+            position: absolute;
+            left: 80px;
+            top: 20px;
+
+        }
+
+        .word1 {
+            height: 400px;
+            width: 80%;
+            box-shadow: 1px 1px 2px 2px black;
+            position: absolute;
+            top: 330px;
+            left: 150px;
+
+        }
+
+        .line1 {
+            font-size: 25px;
+            margin-left: 40px;
+
+        }
+
+        .line2 {
+            margin-left: 40px;
+        }
+
+        .step2 {
+            height: 100px;
+            width: 80%;
+            background: linear-gradient(pink, white);
+            position: absolute;
+            top: 780px;
+            font-size: 30px;
+            left: 150px;
+
+        }
+
+        .word2 {
+            height: 450px;
+            width: 80%;
+            box-shadow: 1px 1px 2px 2px black;
+            position: absolute;
+            top: 890px;
+            left: 150px;
+        }
+
+        .step3 {
+            height: 100px;
+            width: 80%;
+            background: linear-gradient(rgb(103, 230, 103), white);
+            position: absolute;
+            top: 1400px;
+            left: 150px;
+            font-size: 30px;
+        }
+
+        .word3 {
+            height: 60px;
+            width: 80%;
+            box-shadow: 1px 1px 2px 2px black;
+            top: 1550px;
+            position: absolute;
+            left: 150px;
+            text-align: center;
+        }
+
+        .step4 {
+            height: 100px;
+            width: 80%;
+            background: linear-gradient(rgb(103, 230, 103), white);
+            position: absolute;
+            top: 1700px;
+            left: 150px;
+            font-size: 30px;
+        }
+
+        .word4 {
+            height: 60px;
+            width: 80%;
+            box-shadow: 1px 1px 2px 2px black;
+            top: 1850px;
+            position: absolute;
+            left: 150px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #003d66;
+            color: white;
+            padding: 20px 0;
+           position: relative;
+           top: 2000px;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer .social-icons a {
+            color: #ffffff;
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+
+        .footer .social-icons a:hover {
+            color: #c0c0c0;
+        }
+
+        .footer .address {
+            font-size: 0.9rem;
+        }
+
+
+        .footer .footer-logo {
+            max-width: 150px;
+        }
+        @media only screen and (min-width:320px) and (max-width:480px){
+            
+        .process {
+            font-size: 35px;
+            color: black;
+            font-weight: bold;
+            position: absolute;
+            top: 100px;
+            left: 20px;
+        }
+
+        .step1 {
+            height: 100px;
+            width: 98.8%;
+            background: linear-gradient(rgb(119, 119, 238), white);
+            position: absolute;
+            top: 180px;
+            left: 5px;
+            font-size: 20px;
+        }
+
+        .s1 {
+            position: absolute;
+            left: 10px;
+            top: 5px;
+
+        }
+
+        .word1 {
+            height: 800px;
+            width: 96.8%;
+            box-shadow: 1px 1px 2px 2px black;
+            position: absolute;
+            top: 330px;
+            left: 5px;
+
+        }
+
+        .line1 {
+            font-size: 15px;
+            margin-left: 40px;
+
+        }
+
+        .line2 {
+            margin-left: 40px;
+        }
+
+        .step2 {
+            height: 100px;
+            width: 98.8%;
+            background: linear-gradient(pink, white);
+            position: absolute;
+            top: 1180px;
+            font-size: 20px;
+            left: 5px;
+
+        }
+
+        .word2 {
+            height: 950px;
+            width: 96.8%;
+            box-shadow: 1px 1px 2px 2px black;
+            position: absolute;
+            top: 1290px;
+            left: 5px;
+        }
+
+        .step3 {
+            height: 100px;
+            width: 98.8%;
+            background: linear-gradient(rgb(103, 230, 103), white);
+            position: absolute;
+            top: 2300px;
+            left: 5px;
+            font-size: 20px;
+        }
+
+        .word3 {
+            height: 140px;
+            width: 96.8%;
+            box-shadow: 1px 1px 2px 2px black;
+            top: 2400px;
+            position: absolute;
+            left: 5px;
+            text-align: center;
+        }
+
+        .step4 {
+            height: 100px;
+            width: 98.8%;
+            background: linear-gradient(rgb(103, 230, 103), white);
+            position: absolute;
+            top: 2600px;
+            left: 5px;
+            font-size: 20px;
+        }
+
+        .word4 {
+            height: 180px;
+            width: 96.8%;
+            box-shadow: 1px 1px 2px 2px black;
+            top: 2700px;
+            position: absolute;
+            left: 5px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #003d66;
+            color: white;
+            padding: 20px 0;
+           position: relative;
+           top: 3000px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Indian Air Force</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tribute.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login1.html">LogOut</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <p class="process">Selection Process</p>
+    <div class="step1 col-lg-12">
+        <P class="s1">
+            STEP 1 – RESPOND TO ADVERTISEMENT FOLLOWED BY WRITTEN TEST</P>
+    </div>
+    <div class="word1 col-lg-12">
+        <p class="line1">1. For NDA and CDSE</p>
+        <p class="line2">*The advertisement for NDA is released twice a year in the months of June and December and for
+            CDSE in the
+            months of July and November by UPSC. <br>
+            *Candidates are to apply as per the advertisement.
+            <br>
+            *The written tests are conducted by UPSC only. For details visit www.upsc.gov.in
+        </p>
+
+        <p class="line1">2. AFCAT – Air Force Common Admission Test</p>
+        <p class="line2">*For all entries other than NDA and CDSE and for all branches, candidates have to undergo the
+            AFCAT. <br>
+            *The test is conducted twice a year in February and August. <br>
+            *Advertisements inviting applications for AFCAT are out in June and December. Candidates are to apply as per
+            the advertisement. <br>
+            *The test is conducted all across India by the Indian Air Force.</p>
+
+
+        <p class="line1">3. NCC entry</p>
+        <p class="line2">Air Sqn NCC Senior division ‘C’ certificate holders are to apply online through NCC Special
+            entry.</p>
+    </div>
+
+    <div class="step2 col-lg-12">
+        <P class="s1">
+            STEP 2 - AFSB (Air Force Selection Board) TESTING </P>
+    </div>
+    <div class="word2 col-lg-12">
+
+        <p class="line1">1. STAGE I Testing</p>
+        <p class="line2">*Officer Intelligence rating Test.
+            Picture perception and Discussion Test.
+            <br>
+            <br>
+
+            STAGE-I is a screening test. Those who qualify STAGE-I are eligible to undergo STAGE-II testing. STAGE-I
+            disqualified candidates are routed back after announcement of results.
+        </p>
+
+        <p class="line1">2. STAGE II Testing</p>
+        <p class="line2">All STAGE-I qualified candidates undergo following tests as part of STAGE-II testing during
+            next four to five days. Fifth day is for CPSS testing (Flying branch).
+            <br>
+            <br>
+            Psychological Tests are written tests that are conducted by a Psychologist. <br>
+            Group Tests are interactive indoor and outdoor activities which are a combination of mental and physical
+            work. <br>
+            Interview involves a personal conversation with an Interviewing Officer. <br>
+            Candidates who have applied for flying branch and have been recommended, will also have to undergo
+            Computerised Pilot Selection System (CPSS) test . <br>
+            <br>
+
+            These tests will be explained to you in detail before they are conducted at the Selection Board.
+        </p>
+    </div>
+    <div class="step3 col-lg-12">
+        <P class="s1">
+            STEP 3 - CONDUCT OF MEDICAL EXAMINATIONS</P>
+    </div>
+    <div class="word3 col-lg-12">
+
+        If you are recommended by the Selection Board, you will be sent for the medical examination
+        either at Air Force Central Medical Establishment (AFCME), New Delhi or Institute of Aviation Medicine,
+        Bengaluru.
+
+    </div>
+    <div class="step4 col-lg-12">
+        <P class="s1">
+            STEP 4 - PREPARING ALL INDIA MERIT LIST</P>
+    </div>
+    <div class="word4 col-lg-12">
+
+        An All India Merit List is compiled on the basis of your performance in the written test and AFSB interview,
+        subject to being medically fit. Based on the vacancies available in various branches / sub branches, joining
+        instructions are issued to join one of the Training establishments.
+
+    </div>
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="icon .jpeg" alt="Indian Air Force Logo" class="footer-logo mb-3">
+                    <p class="address">Indian Air Force<br>
+                        Vayu Bhawan, Rafi Ahmed Kidwai Marg,<br>
+                        New Delhi - 110 001, India</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="tribute.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="www.facebook.com/indianairforce" class="fab fa-facebook-f" target="_blank"></a>
+                        <a href="https://twitter.com/IAF_MCC" class="fab fa-twitter" target="_blank"></a>
+                        <a href="https://www.instagram.com/indianairforce" class="fab fa-instagram" target="_blank"></a>
+                        <a href="https://www.linkedin.com/company/indian-air-force" class="fab fa-linkedin-in"
+                            target="_blank"></a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        All Rights are Reserved by <br> Ashwini & Srividya
+
+                    </div>
+                </div>
+
+            </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome for social icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+
+</html>

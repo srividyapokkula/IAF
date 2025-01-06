@@ -1,0 +1,210 @@
+nav {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background: linear-gradient(skyblue, white);
+    box-shadow: 1px 1px 2px 2px skyblue;
+    justify-content: space-between;
+    z-index: 1000;
+    margin-top: -15px;
+    line-height: 70px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+    margin: 15px;
+    padding: 25px;
+    top: -35px;
+    left: -60px;
+    position: relative;
+    font-weight: bold;
+}
+
+nav .logo img {
+    height: 60px;
+    width: 100px;
+    margin-left: 60px;
+    cursor: pointer;
+    margin-top: 0px;
+   
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(235, 34, 67);
+    font-family: "Dancing Script", cursive;
+    font-size: 25px;
+}
+
+nav ul li a:hover {
+    color: blue;
+
+}
+
+.login_btn {
+    color: blue;
+    position: absolute;
+    left: 1200px;
+    top: 28px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(35, 248, 35);
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 1px 1px 2px 2px rgb(81, 79, 79);
+    line-height: 30px;
+}
+
+.login_btn:hover {
+    background-color: yellow;
+}
+
+.box {
+    height: 98vh;
+    width: 99.7%;
+}
+
+#back {
+    height: 98vh;
+    width: 98.7%;
+    opacity: 0px;
+    position: absolute;
+}
+
+.top {
+    height: 98vh;
+    width: 98.7%;
+    opacity: 0px;
+    background-color: black;
+    background: linear-gradient(rgb(58, 55, 55), rgba(6, 5, 6, 0.5));
+    position: absolute;
+}
+
+.cont {
+    /* font-family: "Dancing Script", cursive; */
+    font-family: 'Tangerine', serif;
+    font-size: 55px;
+    color: white;
+    position: absolute;
+    top: 60px;
+    left: 500px;
+    cursor: pointer;
+}
+
+.let {
+    font-size: 50px;
+    position: absolute;
+    left: 450px;
+    top: 160px;
+    color: yellow;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    cursor: pointer;
+}
+
+.cont1 {
+    font-size: 100px;
+    color: yellow;
+    position: absolute;
+    left: 450px;
+    top: 190px;
+    font-weight: bold;
+    text-shadow: 4px 4px 8px rgba(244, 243, 243, 0.5);
+    cursor: pointer;
+}
+
+#arjan {
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    left: 30px;
+    top: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#arjan:hover {
+    box-shadow: 2px 2px 3px 3px rgb(68, 67, 67);
+}
+
+#air {
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    left: 1250px;
+    top: 130px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#air:hover {
+    transform: scale(1.1);
+}
+
+#pic1 {
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    top: 60vh;
+    left: 1150px;
+    border-radius: 20px;
+    transform: rotate(-15deg);
+    cursor: pointer;
+}
+
+#pic1:hover {
+    transform: scale(1.0);
+    filter: brightness(1.1);
+
+}
+
+#pic2:hover {
+    transform: scale(1.0);
+    filter: brightness(1.1);
+}
+
+#pic3:hover {
+    transform: scale(1.0);
+    filter: brightness(1.1);
+
+}
+
+#pic2 {
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    top: 60vh;
+    left: 800px;
+    border-radius: 20px;
+    transform: rotate(-15deg);
+    cursor: pointer;
+}
+
+#pic3 {
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    top: 60vh;
+    left: 460px;
+    border-radius: 20px;
+    transform: rotate(-15deg);
+    cursor: pointer;
+}
+.to{
+    color: blue;
+    width: 200px;
+    height: 30px;
+    background-color: rgb(35, 248, 35);
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 1px 1px 2px 2px rgb(81, 79, 79);
+    margin-left: 600px;
+}
+.to:hover{
+    background: yellow;
+}

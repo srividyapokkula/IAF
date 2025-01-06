@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAF</title>
+    <link rel="icon" href="icon .jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </script>
+    <style>
+        .navbar {
+            background-color: #003d66;
+            /* Indian Air Force Blue */
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar-brand {
+            color: #ffffff !important;
+            margin-right: 300px;
+        }
+
+        .navbar-brand:hover {
+            color: #c0c0c0 !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            margin-right: 60px;
+
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #c0c0c0;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23ffffff" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
+        }
+
+        #course1 {
+            height: 270px;
+            width: 270px;
+            position: absolute;
+            top: 150px;
+            left: 10px;
+        }
+
+        .defence {
+            position: absolute;
+            top: 100px;
+            left: 305px;
+            font-size: 45px;
+            color: rgb(9, 105, 230);
+        }
+
+        .defencepara {
+            font-size: 20px;
+            position: absolute;
+            top: 200px;
+            left: 300px;
+        }
+
+        .line {
+            position: absolute;
+            top: 330px;
+            left: 300px;
+            border: 1px solid black;
+            /* height: 1px; */
+            width: 750px;
+        }
+
+        .wtsapp {
+            position: absolute;
+            top: 350px;
+            left: 300px;
+            font-size: 20px;
+        }
+
+        .fee_btn {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 500px;
+            top: 365px;
+            width: 200px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .fee_btn:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        .price_btn {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 800px;
+            top: 365px;
+            width: 200px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .price_btn:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        #course2 {
+            height: 270px;
+            width: 270px;
+            position: absolute;
+            top: 500px;
+            left: 10px;
+        }
+
+        .defence2 {
+            position: absolute;
+            top: 460px;
+            left: 305px;
+            font-size: 45px;
+            color: rgb(224, 18, 42);
+        }
+
+        .defencepara2 {
+            font-size: 20px;
+            position: absolute;
+            top: 550px;
+            left: 300px;
+        }
+
+        .line2 {
+            position: absolute;
+            top: 650px;
+            left: 300px;
+            border: 1px solid black;
+            /* height: 1px; */
+            width: 750px;
+        }
+
+        .wtsapp2 {
+            position: absolute;
+            top: 680px;
+            left: 300px;
+            font-size: 20px;
+        }
+
+        .fee_btn2 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 500px;
+            top: 695px;
+            width: 200px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .fee_btn2:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        .price_btn2 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 800px;
+            top: 695px;
+            width: 200px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .price_btn2:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        #course3 {
+            height: 300px;
+            width: 270px;
+            position: absolute;
+            top: 800px;
+            left: 10px;
+        }
+
+        .defence3 {
+            position: absolute;
+            top: 800px;
+            left: 305px;
+            font-size: 45px;
+            color: rgb(244, 182, 10);
+        }
+
+        .defencepara3 {
+            font-size: 20px;
+            position: absolute;
+            top: 900px;
+            left: 300px;
+        }
+
+        .line3 {
+            position: absolute;
+            top: 1010px;
+            left: 300px;
+            border: 1px solid black;
+            width: 750px;
+        }
+
+        .wtsapp3 {
+            position: absolute;
+            top: 1040px;
+            left: 300px;
+            font-size: 20px;
+        }
+
+        .fee_btn3 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 510px;
+            top: 1055px;
+            width: 210px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .fee_btn3:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        .price_btn3 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 800px;
+            top: 1055px;
+            width: 200px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .price_btn3:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        #course4 {
+            height: 300px;
+            width: 270px;
+            position: absolute;
+            top: 1150px;
+            left: 10px;
+        }
+
+        .defence4 {
+            position: absolute;
+            top: 1130px;
+            left: 305px;
+            font-size: 45px;
+            color: rgb(90, 5, 5);
+        }
+
+        .defencepara4 {
+            font-size: 20px;
+            position: absolute;
+            top: 1230px;
+            left: 300px;
+        }
+
+        .line4 {
+            position: absolute;
+            top: 1340px;
+            left: 300px;
+            border: 1px solid black;
+            width: 750px;
+        }
+
+        .wtsapp4 {
+            position: absolute;
+            top: 1390px;
+            left: 300px;
+            font-size: 20px;
+        }
+
+        .fee_btn4 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 510px;
+            top: 1405px;
+            width: 210px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .fee_btn4:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        .price_btn4 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 800px;
+            top: 1405px;
+            width: 200px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .price_btn4:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        #course5 {
+            height: 300px;
+            width: 270px;
+            position: absolute;
+            top: 1505px;
+            left: 10px;
+        }
+
+        .defence5 {
+            position: absolute;
+            top: 1460px;
+            left: 305px;
+            font-size: 45px;
+            color: rgb(8, 55, 240);
+        }
+
+        .defencepara5 {
+            font-size: 20px;
+            position: absolute;
+            top: 1590px;
+            left: 300px;
+        }
+
+        .line5 {
+            position: absolute;
+            top: 1690px;
+            left: 300px;
+            border: 1px solid black;
+            width: 750px;
+        }
+
+        .wtsapp5 {
+            position: absolute;
+            top: 1730px;
+            left: 300px;
+            font-size: 20px;
+        }
+
+        .fee_btn5 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 510px;
+            top: 1745px;
+            width: 215px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .fee_btn5:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        .price_btn5 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 800px;
+            top: 1745px;
+            width: 215px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .price_btn5:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        .more_btn {
+            color: rgb(75, 33, 5);
+            position: absolute;
+            left: 510px;
+            top: 1835px;
+            width: 220px;
+            height: 60px;
+            background-color: rgb(54, 205, 167);
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        #rg:hover i {
+            transform: translateX(5px);
+        }
+
+        #rg:hover {
+            background-color: rgb(202, 106, 215);
+        }
+
+        i {
+            margin: 8px;
+        }
+
+        .footer {
+            background-color: #003d66;
+            color: white;
+            padding: 20px 0;
+            position: relative;
+            top: 1600px;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer .social-icons a {
+            color: #ffffff;
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+
+        .footer .social-icons a:hover {
+            color: #c0c0c0;
+        }
+
+        .footer .address {
+            font-size: 0.9rem;
+        }
+
+
+        .footer .footer-logo {
+            max-width: 150px;
+        }
+        @media only screen and (min-width:320px) and (max-width:480px){
+            
+        #course1 {
+            height: 120px;
+            width: 140px;
+            position: absolute;
+            top: 240px;
+            left: 10px;
+        }
+        #course1:hover{
+            transform: scale(1.1);
+        }
+
+        .defence {
+            position: absolute;
+            top: 100px;
+            left: 15px;
+            font-size: 40px;
+            color: rgb(9, 105, 230);
+        }
+
+        .defencepara {
+            font-size: 16px;
+            position: absolute;
+            top: 380px;
+            left: 10px;
+        }
+
+        .line {
+            position: absolute;
+            top: 375px;
+            left: 20px;
+            border: 1px solid black;
+            /* height: 1px; */
+            width: 270px;
+        }
+
+        .wtsapp {
+            position: absolute;
+            top: 310px;
+            left: 160px;
+            font-size: 16px;
+        }
+
+        .fee_btn {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 160px;
+            width: 140px;
+            top: 225px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .fee_btn:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        .price_btn {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 160px;
+            width: 140px;
+            top: 270px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .price_btn:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        #course2 {
+            height: 130px;
+            width: 140px;
+            position: absolute;
+            top: 740px;
+            left: 10px;
+        }
+        #course2:hover{
+            transform: scale(1.1);
+        }
+
+
+        .defence2 {
+            position: absolute;
+            top: 630px;
+            left: 15px;
+            font-size: 35px;
+            color: rgb(224, 18, 42);
+        }
+
+        .defencepara2 {
+            font-size: 16px;
+            position: absolute;
+            top: 890px;
+            left: 10px;
+        }
+
+        .line2 {
+            position: absolute;
+            top: 880px;
+            left: 20px;
+            border: 1px solid black;
+            /* height: 1px; */
+            width: 270px;
+        }
+
+        .wtsapp2 {
+            position: absolute;
+            top: 830px;
+            left: 160px;
+            font-size: 16px;
+        }
+
+        .fee_btn2 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 160px;
+            width: 140px;
+            top: 740px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .fee_btn2:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        .price_btn2 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 160px;
+            width: 140px;
+            top: 790px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .price_btn2:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        #course3 {
+            height: 140px;
+            width: 140px;
+            position: absolute;
+            top: 1200px;
+            left: 10px;
+        }
+        #course3:hover{
+            transform: scale(1.1);
+        }
+
+
+        .defence3 {
+            position: absolute;
+            top: 1100px;
+            left: 15px;
+            font-size: 40px;
+            color: rgb(244, 182, 10);
+        }
+
+        .defencepara3 {
+            font-size: 16px;
+            position: absolute;
+            top: 1370px;
+            left: 10px;
+        }
+
+        .line3 {
+            position: absolute;
+            top: 1350px;
+            left: 20px;
+            border: 1px solid black;
+            width: 270px;
+        }
+
+        .wtsapp3 {
+            position: absolute;
+            top: 1310px;
+            left: 160px;
+            font-size: 16px;
+        }
+
+        .fee_btn3 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 160px;
+            width: 140px;
+            top: 1235px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .fee_btn3:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        .price_btn3 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 160px;
+            width: 140px;
+            top: 1275px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .price_btn3:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        #course4 {
+            height: 140px;
+            width: 140px;
+            position: absolute;
+            top: 1730px;
+            left: 10px;
+        }
+        #course4:hover{
+            transform: scale(1.1);
+        }
+
+
+        .defence4 {
+            position: absolute;
+            top: 1600px;
+            left: 15px;
+            font-size: 40px;
+            color: rgb(90, 5, 5);
+        }
+
+        .defencepara4 {
+            font-size: 16px;
+            position: absolute;
+            top: 1890px;
+            left: 10px;
+        }
+
+        .line4 {
+            position: absolute;
+            top: 1880px;
+            left: 20px;
+            border: 1px solid black;
+            width: 270px;
+        }
+
+        .wtsapp4 {
+            position: absolute;
+            top: 1830px;
+            left: 160px;
+            font-size: 16px;
+        }
+
+        .fee_btn4 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 160px;
+            width: 140px;
+            top: 1750px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .fee_btn4:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        .price_btn4 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 160px;
+            width: 140px;
+            top: 1790px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .price_btn4:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        #course5 {
+            height: 130px;
+            width: 140px;
+            position: absolute;
+            top: 2205px;
+            left: 10px;
+        }
+        #course5:hover{
+            transform: scale(1.1);
+        }
+
+
+        .defence5 {
+            position: absolute;
+            top: 2140px;
+            left: 15px;
+            font-size: 40px;
+            color: rgb(8, 55, 240);
+        }
+
+        .defencepara5 {
+            font-size: 16px;
+            position: absolute;
+            top: 2370px;
+            left: 10px;
+        }
+
+        .line5 {
+            position: absolute;
+            top: 2345px;
+            left: 20px;
+            border: 1px solid black;
+            width: 270px;
+        }
+
+        .wtsapp5 {
+            position: absolute;
+            top: 2295px;
+            left: 160px;
+            font-size: 16px;
+        }
+
+        .fee_btn5 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 160px;
+            width: 140px;
+            top: 2215px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .fee_btn5:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        .price_btn5 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 160px;
+            width: 140px;
+            top: 2255px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .price_btn5:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        .more_btn {
+            color: rgb(75, 33, 5);
+            position: absolute;
+            left: 50px;
+            width: 140px;
+            top: 2555px;
+            width: 220px;
+            height: 60px;
+            background-color: rgb(54, 205, 167);
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        #rg:hover i {
+            transform: translateX(5px);
+        }
+
+        #rg:hover {
+            background-color: rgb(202, 106, 215);
+        }
+
+        i {
+            margin: 8px;
+        }
+        .footer {
+            background-color: #003d66;
+            color: white;
+            padding: 20px 0;
+            position: relative;
+            top: 2280px;
+        }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Indian Air Force</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tribute.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login1.html">LogOut</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <div class="box1 col-lg-12">
+        <img src="./course1.jpg" id="course1">
+        <p class="defence">Defence Forces Academy.</p>
+        <p class="defencepara">National Defence Academy will continue to be the global premier joint training
+            institution<br> and centre of excellence for producing junior leaders, for the Indian Armed Forces,
+            equipped<br> with professional, moral, and physical attributes required to face the challenges of the
+            future<br> battlefield and capable of leading ...</p>
+        <p class="line"></p>
+        <p class="wtsapp"><i class="fa-brands fa-whatsapp"></i> 098711 23407</p>
+        <ul>
+            <li></li>
+            <a href="price.html"><button class="fee_btn">Fee details</button></a>
+            </li>
+
+        </ul>
+        <ul>
+            <li></li>
+            <a href="cut.html"><button class="price_btn"> Home IAF</button></a>
+            </li>
+        </ul>
+    </div>
+    <div class="box2 col-lg-12">
+        <img src="./course2.jpg" id="course2">
+        <p class="defence2">Air Force Technical College.</p>
+        <p class="defencepara2">Air Force Technical College was established on 4 July 1949, in collaboration with Air
+            Service<br> Ltd, Hamble, UK. The college was named Technical Training College and the entire staff of
+            the<br>
+            college at that time comprised officers and technicians from the Royal Air Force.</p>
+        <p class="line2"></p>
+        <p class="wtsapp2"><i class="fa-brands fa-whatsapp"></i> 011 2301 0231</p>
+        <ul>
+            <li></li>
+            <a href="price.html"><button class="fee_btn2">Fee details</button></a>
+            </li>
+        </ul>
+        <ul>
+            <li></li>
+            <a href="selection.html"><button class="price_btn2">Selection process</button></a>
+            </li>
+        </ul>
+    </div>
+    <div class="box3 col-lg-12">
+        <img src="./course4.jpg" id="course3">
+        <p class="defence3">Warriors Defence Academy.</p>
+        <p class="defencepara3">In essence, Warriors Defence Academy distinguishes itself by combining
+            accessibility,<br> experienced and supportive trainers, innovative training methods, and a fully
+            equipped<br> facility, making it the optimal choice for those aspiring to undergo effective army training.
+        </p>
+        <p class="line3"></p>
+        <p class="wtsapp3"><i class="fa-brands fa-whatsapp"></i> 086396 52433</p>
+        <ul>
+            <li></li>
+            <a href="price.html"><button class="fee_btn3">Fee details</button></a>
+            </li>
+        </ul>
+        <ul>
+            <li></li>
+            <a href="History.html"><button class="price_btn3">History of IAF</button></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="box4 col-lg-12">
+        <img src="./img4.jpg" id="course4">
+        <p class="defence4">Office Career Academy.</p>
+        <p class="defencepara4">In essence, Warriors Defence Academy distinguishes itself by combining
+            accessibility,<br> experienced and supportive trainers, innovative training methods, and a fully
+            equipped<br> facility, making it the optimal choice for those aspiring to undergo effective army training.
+        </p>
+        <p class="line4"></p>
+        <p class="wtsapp4"><i class="fa-brands fa-whatsapp"></i> 8446650474</p>
+        <ul>
+            <li></li>
+            <a href="price.html"><button class="fee_btn4">Fee details</button></a>
+            </li>
+        </ul>
+        <ul>
+            <li></li>
+            <a href="cut.html"><button class="price_btn4">Other details</button></a>
+            </li>
+        </ul>
+    </div>
+    <div class="box5 col-lg-12">
+        <img src="./img1.jpg" id="course5">
+        <p class="defence5">Force Defence.</p>
+        <p class="defencepara5">The Indian Defence Force (IDF) was a part-time defence force established as part of the
+            Indian<br> Army in 1917 in order to release regular troops from garrison ...</p>
+        <p class="line5"></p>
+        <p class="wtsapp5"><i class="fa-brands fa-whatsapp"></i> 23012286</p>
+        <ul>
+            <li></li>
+            <a href="price.html"><button class="fee_btn5">Fee details</button></a>
+            </li>
+        </ul>
+        <ul>
+            <li></li>
+            <a href="tribute.html"><button class="price_btn5">inspiration</button></a>
+            </li>
+        </ul>
+    </div>
+    <ul>
+        <li></li>
+        <a href="price.html"><button class="more_btn" id="rg">More Information<i
+                    class="fa-solid fa-angle-right"></i></button></a>
+        </li>
+    </ul>
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="icon .jpeg" alt="Indian Air Force Logo" class="footer-logo mb-3">
+                    <p class="address">Indian Air Force<br>
+                        Vayu Bhawan, Rafi Ahmed Kidwai Marg,<br>
+                        New Delhi - 110 001, India</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="tribute.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="www.facebook.com/indianairforce" class="fab fa-facebook-f" target="_blank"></a>
+                        <a href="https://twitter.com/IAF_MCC" class="fab fa-twitter" target="_blank"></a>
+                        <a href="https://www.instagram.com/indianairforce" class="fab fa-instagram" target="_blank"></a>
+                        <a href="https://www.linkedin.com/company/indian-air-force" class="fab fa-linkedin-in"
+                            target="_blank"></a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        All Rights are Reserved by <br> Ashwini & Srividya
+
+                    </div>
+                </div>
+
+            </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome for social icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+
+
+
+
+</body>
+
+</html>
